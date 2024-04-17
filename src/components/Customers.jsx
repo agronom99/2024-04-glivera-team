@@ -3,7 +3,6 @@ import UserTable from "./UserTable";
 import Search from "./Search";
 import Pagination from "./Pagination";
 
-
 const Customers = () => {
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(0);
@@ -30,7 +29,10 @@ const Customers = () => {
           entries
         </p>
         <div className="my-4 mx-2 lg:mx-[38px]">
-          <Pagination handlePageChange={handlePageChange} currentPage={currentPage} />
+          <Pagination
+            handlePageChange={handlePageChange}
+            currentPage={currentPage}
+          />
         </div>
       </div>
     </div>
